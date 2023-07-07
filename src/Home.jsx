@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import adhyayData from "./Content/Adhyay/index.json";
+import { FRONT_URL } from "./Constant";
 import ImageWithPlaceholder from "./ImageWithPlaceholder";
 
 const Home = () => {
@@ -18,11 +19,14 @@ const Home = () => {
       <div className="flex w-[80%] bg-[#FFFFFF99] rounded-md px-3 py-8 md:py-4   flex-col items-center ">
         <div className="flex justify-center items-center w-full">
           {/* <img
-            src="/Assets/table-of-content.png"
+            src={
+              "https://bhagwad-admin.github.io/Frontend" +
+              "/Assets/table-of-content.png"
+            }
             className="w-[60%] md:w-[20%]"
           /> */}
           <ImageWithPlaceholder
-            src="/Assets/table-of-content.png"
+            src={FRONT_URL + "/Assets/table-of-content.png"}
             alt="Table of Content"
             className="w-[60%] md:w-[20%]"
           />
