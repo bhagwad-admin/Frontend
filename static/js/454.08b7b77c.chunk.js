@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbhagwad=self.webpackChunkbhagwad||[]).push([[454],{454:function(e){e.exports=JSON.parse('{"chapterNumber":6,"title":"Chapter 6: Arjuna Vishada Yoga","about":[],"keywords":"keyword1,keyword2,keyword3","description":"Your page meta description","verses":[]}')}}]);
