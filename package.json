@@ -1,5 +1,4 @@
 {
-  "homepage": "https://bhagwad-admin.github.io/Frontend",
   "name": "bhagwad",
   "version": "0.1.0",
   "private": true,
@@ -50,3 +49,6 @@
     "gh-pages": "^5.0.0"
   }
 }
+
+
+

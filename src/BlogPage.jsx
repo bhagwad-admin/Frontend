@@ -5,6 +5,8 @@ import axios from "axios";
 import { CircularProgress } from "@material-ui/core";
 import { MdArrowBack } from "react-icons/md";
 import { Helmet } from "react-helmet";
+import userIcon from "./Assets/user-icon.png";
+import replyIcon from "./Assets/reply.png";
 
 const BlogPage = () => {
   const { blogId } = useParams();
@@ -144,7 +146,8 @@ const BlogPage = () => {
             <div className="flex flex-col  border-b-slate-700 space-y-5 w-full  px-5 py-4 rounded-lg">
               <div className="flex space-x-3 w-full">
                 <img
-                  src={FRONT_URL + "/Assets/user-icon.png"}
+                  // src={FRONT_URL + "Assets/user-icon.png"}
+                  src={userIcon}
                   className="w-11 h-10"
                 />
 
@@ -153,7 +156,8 @@ const BlogPage = () => {
                   <div className="flex space-x-2 items-center ">
                     <span className="text-gray-600">{`${dateIST} at ${timeIST}`}</span>
                     <img
-                      src={FRONT_URL + "/Assets/reply.png"}
+                      // src={FRONT_URL + "Assets/reply.png"}
+                      src={replyIcon}
                       className="cursor-pointer w-5"
                       title="Reply"
                       onClick={() => handleReply(reply)}
@@ -367,7 +371,10 @@ const BlogPage = () => {
                     <div className="flex flex-col border-b-2 border-dotted border-b-slate-700 space-y-5 w-full md:w-4/5 px-5 py-4 rounded-lg">
                       <div className="flex space-x-3 w-full">
                         <img
-                          src={FRONT_URL + "/Assets/user-icon.png"}
+                          alt="no"
+                          // src="./Assets/user-icon.png"
+                          src={userIcon}
+                          // src={FRONT_URL + "Assets/user-icon.png"}
                           className="w-11 h-10"
                         />
 
@@ -378,7 +385,8 @@ const BlogPage = () => {
                           <div className="flex space-x-2 items-center ">
                             <span className="text-gray-600">{`${dateIST} at ${timeIST}`}</span>
                             <img
-                              src={FRONT_URL + "/Assets/reply.png"}
+                              // src={FRONT_URL + "Assets/reply.png"}
+                              src={replyIcon}
                               className="cursor-pointer w-5"
                               title="Reply"
                               onClick={() => handleReply(comment)}

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import adhyayData from "./Content/Adhyay/index.json";
 import { FRONT_URL } from "./Constant";
 import ImageWithPlaceholder from "./ImageWithPlaceholder";
+import tableOfContent from "./Assets/table-of-content.png";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,8 @@ const Home = () => {
             className="w-[60%] md:w-[20%]"
           /> */}
           <ImageWithPlaceholder
-            src={FRONT_URL + "/Assets/table-of-content.png"}
+            // src={FRONT_URL + "Assets/table-of-content.png"}
+            src={tableOfContent}
             alt="Table of Content"
             className="w-[60%] md:w-[20%]"
           />
